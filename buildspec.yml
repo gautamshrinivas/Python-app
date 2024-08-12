@@ -11,7 +11,7 @@ phases:
   build:
     commands:
       - echo Compiling the Java application...
-      - javac HelloWorld.java
+      - javac app.java
 artifacts:
   files:
-    - HelloWorld.class
+    - app.class

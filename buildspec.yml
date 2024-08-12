@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: openjdk11
+    commands:
+      - echo Installing dependencies...
+      - mvn install
+  build:
+    commands:
+      - echo Compiling the Java application...
+      - javac HelloWorld.java
+artifacts:
+  files:
+    - HelloWorld.class
